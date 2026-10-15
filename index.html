@@ -1,0 +1,825 @@
+<html lang="id">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-
+  width, initial-scale=1.0">
+      <title>Curriculum Vitae - Rafa Radya Amalfi |
+  TKJ SMKN 5 Bandung</title>
+      <link rel="preconnect" href="https://fonts.
+  googleapis.com">
+      <link rel="preconnect" href="https://fonts.
+  gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.
+  com/css2?family=Plus+Jakarta+Sans:wght@300;400;
+  500;600;700;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.
+  cloudflare.com/ajax/libs/font-awesome/6.4.
+  0/css/all.min.css">
+      <style>
+        :root {
+          --primary: #0f172a;
+          --primary-accent: #2563eb;
+          --primary-gradient: linear-
+  gradient(135deg, #1e40af 0%, #3b82f6 100%);
+          --accent-cyan: #06b6d4;
+          --text-dark: #1e293b;
+          --text-muted: #475569;
+          --bg-page: #f1f5f9;
+          --sidebar-bg: #090d16;
+          --sidebar-card: rgba(255, 255, 255, 0.
+  05);
+          --sidebar-border: rgba(255, 255, 255, 0.
+  1);
+          --sidebar-text: #f8fafc;
+          --sidebar-sub: #94a3b8;
+        }
+
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+          font-family: 'Plus Jakarta Sans', sans-
+  serif;
+          background-color: var(--bg-page);
+          color: var(--text-dark);
+          padding: 24px;
+          display: flex;
+          justify-content: center;
+          line-height: 1.5;
+          -webkit-font-smoothing: antialiased;
+        }
+
+        .cv-container {
+          width: 100%;
+          max-width: 860px;
+          min-height: 1120px;
+          background: #ffffff;
+          box-shadow: 0 12px 35px rgba(0, 0, 0, 0.
+  08);
+          display: grid;
+          grid-template-columns: 295px 1fr;
+          border-radius: 14px;
+          overflow: hidden;
+        }
+
+        /* ================= SIDEBAR
+  ================= */
+        .sidebar {
+          background-color: var(--sidebar-bg);
+          color: var(--sidebar-text);
+          padding: 36px 22px;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          border-right: 1px solid #e2e8f0;
+        }
+
+        .profile-box {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .avatar-wrapper {
+          position: relative;
+          margin-bottom: 14px;
+        }
+
+        .avatar-badge {
+          width: 108px;
+          height: 108px;
+          border-radius: 50%;
+          background: var(--primary-gradient);
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2.3rem;
+          font-weight: 800;
+          letter-spacing: 1.5px;
+          box-shadow: 0 8px 20px rgba(37, 99, 235,
+  0.35);
+          border: 3px solid rgba(255, 255, 255, 0.
+  2);
+        }
+
+        .status-indicator {
+          position: absolute;
+          bottom: 4px;
+          right: 6px;
+          width: 16px;
+          height: 16px;
+          background: #10b981;
+          border-radius: 50%;
+          border: 2px solid var(--sidebar-bg);
+        }
+
+        .sidebar-name {
+          font-size: 1.25rem;
+          font-weight: 800;
+          color: #ffffff;
+          letter-spacing: 0.3px;
+        }
+
+        .sidebar-major {
+          font-size: 0.82rem;
+          font-weight: 600;
+          color: var(--accent-cyan);
+          margin-top: 4px;
+          line-height: 1.3;
+        }
+
+        .sidebar-school {
+          font-size: 0.76rem;
+          color: var(--sidebar-sub);
+          margin-top: 2px;
+        }
+
+        .side-title {
+          font-size: 0.78rem;
+          text-transform: uppercase;
+          letter-spacing: 1.4px;
+          color: #60a5fa;
+          font-weight: 700;
+          margin-bottom: 12px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .side-title::after {
+          content: '';
+          flex: 1;
+          height: 1px;
+          background: var(--sidebar-border);
+        }
+
+        .contact-list {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .contact-item {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          font-size: 0.82rem;
+          background: var(--sidebar-card);
+          padding: 8px 12px;
+          border-radius: 8px;
+          border: 1px solid var(--sidebar-border);
+          word-break: break-all;
+        }
+
+        .contact-item i {
+          color: #38bdf8;
+          font-size: 0.95rem;
+          min-width: 16px;
+          text-align: center;
+        }
+
+        .contact-item a {
+          color: var(--sidebar-text);
+          text-decoration: none;
+          transition: color 0.2s;
+        }
+
+        .contact-item a:hover {
+          color: #60a5fa;
+        }
+
+        .skills-cluster {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .skill-category-label {
+          font-size: 0.74rem;
+          color: var(--sidebar-sub);
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.8px;
+        }
+
+        .tags-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 6px;
+        }
+
+        .badge-tag {
+          background: rgba(59, 130, 246, 0.15);
+          color: #e0f2fe;
+          border: 1px solid rgba(59, 130, 246, 0.
+  35);
+          padding: 4px 8px;
+          border-radius: 6px;
+          font-size: 0.74rem;
+          font-weight: 500;
+        }
+
+        .badge-soft {
+          background: rgba(255, 255, 255, 0.07);
+          color: #cbd5e1;
+          border: 1px solid rgba(255, 255, 255, 0.
+  1);
+          padding: 4px 8px;
+          border-radius: 6px;
+          font-size: 0.74rem;
+        }
+
+        .lang-box {
+          background: var(--sidebar-card);
+          border: 1px solid var(--sidebar-border);
+          border-radius: 8px;
+          padding: 10px 12px;
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+
+        .lang-row {
+          display: flex;
+          justify-content: space-between;
+          font-size: 0.8rem;
+        }
+
+        /* ================= MAIN CONTENT
+  ================= */
+        .main-content {
+          padding: 36px 34px;
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+          background: #ffffff;
+        }
+
+        .header-block {
+          border-bottom: 2px solid #f1f5f9;
+          padding-bottom: 16px;
+        }
+
+        .hero-name {
+          font-size: 1.95rem;
+          font-weight: 800;
+          color: var(--primary);
+          letter-spacing: -0.5px;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .hero-subtitle {
+          font-size: 0.95rem;
+          font-weight: 600;
+          color: var(--primary-accent);
+          margin-top: 2px;
+        }
+
+        .meta-badges {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          margin-top: 10px;
+        }
+
+        .meta-pill {
+          background: #eff6ff;
+          color: #1e40af;
+          border: 1px solid #bfdbfe;
+          padding: 3px 10px;
+          border-radius: 6px;
+          font-size: 0.75rem;
+          font-weight: 600;
+          display: inline-flex;
+          align-items: center;
+          gap: 5px;
+        }
+
+        .section-card {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .sec-heading {
+          font-size: 0.96rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          color: var(--primary);
+          letter-spacing: 0.5px;
+          display: flex;
+          align-items: center;
+          gap: 9px;
+          border-bottom: 2px solid #e2e8f0;
+          padding-bottom: 6px;
+          margin-bottom: 4px;
+        }
+
+        .sec-heading i {
+          color: var(--primary-accent);
+          font-size: 0.95rem;
+        }
+
+        .summary-text {
+          color: var(--text-muted);
+          font-size: 0.85rem;
+          text-align: justify;
+          line-height: 1.6;
+        }
+
+        /* Timelines */
+        .timeline {
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+        }
+
+        .timeline-item {
+          position: relative;
+          padding-left: 18px;
+          border-left: 2px solid #e2e8f0;
+        }
+
+        .timeline-item::before {
+          content: '';
+          position: absolute;
+          left: -5.5px;
+          top: 5px;
+          width: 9px;
+          height: 9px;
+          border-radius: 50%;
+          background: var(--primary-accent);
+          box-shadow: 0 0 0 3px #dbeafe;
+        }
+
+        .item-top {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+          flex-wrap: wrap;
+        }
+
+        .item-title {
+          font-size: 0.92rem;
+          font-weight: 700;
+          color: var(--text-dark);
+        }
+
+        .item-period {
+          font-size: 0.75rem;
+          font-weight: 700;
+          color: var(--primary-accent);
+          background: #eff6ff;
+          padding: 2px 7px;
+          border-radius: 4px;
+        }
+
+        .item-sub {
+          font-size: 0.82rem;
+          font-weight: 600;
+          color: var(--text-muted);
+          margin-top: 1px;
+        }
+
+        .item-desc {
+          font-size: 0.82rem;
+          color: var(--text-muted);
+          margin-top: 5px;
+          line-height: 1.55;
+        }
+
+        .item-desc ul {
+          margin-left: 16px;
+          margin-top: 4px;
+        }
+
+        .item-desc li {
+          margin-bottom: 3px;
+        }
+
+        /* Grid for quick highlights */
+        .highlight-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px;
+          margin-top: 4px;
+        }
+
+        .highlight-card {
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+          padding: 10px 12px;
+        }
+
+        .highlight-card h4 {
+          font-size: 0.82rem;
+          font-weight: 700;
+          color: var(--primary);
+          margin-bottom: 3px;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+
+        .highlight-card h4 i {
+          color: var(--primary-accent);
+          font-size: 0.8rem;
+        }
+
+        .highlight-card p {
+          font-size: 0.77rem;
+          color: var(--text-muted);
+          line-height: 1.4;
+        }
+
+        /* PRINT RULES */
+        @media print {
+          body {
+            background: transparent;
+            padding: 0;
+          }
+          .cv-container {
+            box-shadow: none;
+            max-width: 100%;
+            border-radius: 0;
+            min-height: auto;
+          }
+          @page {
+            size: A4;
+            margin: 8mm;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .cv-container {
+            grid-template-columns: 1fr;
+          }
+          .highlight-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+      </style>
+    </head>
+    <body>
+
+      <div class="cv-container">
+        <!-- ================= SIDEBAR
+  ================= -->
+        <aside class="sidebar">
+          <div class="profile-box">
+            <div class="avatar-wrapper">
+              <div class="avatar-badge">RR</div>
+              <div class="status-indicator"
+  title="Siap untuk PKL / Magang"></div>
+            </div>
+            <h2 class="sidebar-name">Rafa Radya
+  Amalfi</h2>
+            <p class="sidebar-major">Teknik
+  Komputer & Jaringan (TKJ)</p>
+            <p class="sidebar-school">SMK Negeri 5
+  Bandung</p>
+          </div>
+
+          <!-- KONTAK -->
+          <section>
+            <h3 class="side-title"><i class="fa-
+  solid fa-address-book"></i> Kontak</h3>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:08988196980">0898-
+  8196-980</a>
+              </li>
+              <li class="contact-item">
+                <i class="fa-solid fa-
+  envelope"></i>
+                <a href="mailto:rappzz810@gmail.
+  com">rappzz810@gmail.com</a>
+              </li>
+              <li class="contact-item">
+                <i class="fa-solid fa-location-
+  dot"></i>
+                <span>Bandung, Jawa Barat</span>
+              </li>
+              <li class="contact-item">
+                <i class="fa-solid fa-id-card-
+  clip"></i>
+                <span>Absen: 31 &bull; Kelas
+  TKJ</span>
+              </li>
+              <li class="contact-item">
+                <i class="fa-brands fa-
+  github"></i>
+                <a href="https://github.
+  com/rappzz-lab" target="_blank">github.
+  com/rappzz-lab</a>
+              </li>
+            </ul>
+          </section>
+
+          <!-- KEAHLIAN TEKNIS (TKJ) -->
+          <section>
+            <h3 class="side-title"><i class="fa-
+  solid fa-network-wired"></i> Hard Skills</h3>
+            <div class="skills-cluster">
+              <span class="skill-category-
+  label">Jaringan & Routing:</span>
+              <div class="tags-container">
+                <span class="badge-tag">MikroTik
+  RouterOS</span>
+                <span class="badge-tag">Cisco
+  Packet Tracer</span>
+                <span class="badge-tag">LAN / WLAN
+  / VLAN</span>
+                <span class="badge-tag">IP
+  Addressing & Subnetting</span>
+                <span class="badge-tag">DHCP & NAT
+  Config</span>
+              </div>
+
+              <span class="skill-category-
+  label">Hardware & Sistem:</span>
+              <div class="tags-container">
+                <span class="badge-tag">Perakitan
+  PC & Laptop</span>
+                <span class="badge-
+  tag">Troubleshooting Hardware</span>
+                <span class="badge-tag">Crimping
+  RJ45 (UTP)</span>
+                <span class="badge-tag">Instalasi
+  OS (Win/Linux)</span>
+                <span class="badge-tag">Dasar
+  Server & Cloud</span>
+              </div>
+
+              <span class="skill-category-
+  label">Aplikasi & Produktivitas:</span>
+              <div class="tags-container">
+                <span class="badge-tag">Microsoft
+  Office Suite</span>
+                <span class="badge-tag">Google
+  Workspace</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- SOFT SKILLS -->
+          <section>
+            <h3 class="side-title"><i class="fa-
+  solid fa-users-gear"></i> Soft Skills</h3>
+            <div class="tags-container">
+              <span class="badge-soft">Problem
+  Solving</span>
+              <span class="badge-soft">Kerja Sama
+  Tim</span>
+              <span class="badge-
+  soft">Kedisiplinan Tinggi</span>
+              <span class="badge-soft">Cepat
+  Tanggap & Belajar</span>
+              <span class="badge-soft">Manajemen
+  Waktu</span>
+              <span class="badge-soft">Ketelitian
+  Kerja</span>
+            </div>
+          </section>
+
+          <!-- KEMAMPUAN BAHASA -->
+          <section>
+            <h3 class="side-title"><i class="fa-
+  solid fa-globe"></i> Bahasa</h3>
+            <div class="lang-box">
+              <div class="lang-row">
+                <span><strong>Bahasa
+  Indonesia</strong></span>
+                <span style="color: #38bdf8;
+  ">Fasih (Native)</span>
+              </div>
+              <div class="lang-row">
+                <span><strong>Bahasa
+  Inggris</strong></span>
+                <span style="color: #94a3b8;
+  ">Menengah / Teknis</span>
+              </div>
+            </div>
+          </section>
+        </aside>
+
+        <!-- ================= MAIN CONTENT
+  ================= -->
+        <main class="main-content">
+          <!-- HEADER UTAMA -->
+          <header class="header-block">
+            <h1 class="hero-name">Rafa Radya
+  Amalfi</h1>
+            <p class="hero-subtitle">Siswa Teknik
+  Komputer dan Jaringan (TKJ)</p>
+            <div class="meta-badges">
+              <span class="meta-pill"><i
+  class="fa-solid fa-school"></i> SMKN 5
+  Bandung</span>
+              <span class="meta-pill"><i
+  class="fa-solid fa-list-ol"></i> Nomor Absen
+  31</span>
+              <span class="meta-pill"><i
+  class="fa-solid fa-circle-check" style="color:
+  #10b981;"></i> Siap Praktik Kerja Lapangan
+  (PKL)</span>
+            </div>
+          </header>
+
+          <!-- PROFIL SINGKAT -->
+          <section class="section-card">
+            <h2 class="sec-heading"><i class="fa-
+  solid fa-user-tie"></i> Ringkasan Profil</h2>
+            <p class="summary-text">
+              Siswa kompetensi keahlian
+  <strong>Teknik Komputer dan Jaringan
+  (TKJ)</strong> di <strong>SMK Negeri 5
+  Bandung</strong> dengan motivasi tinggi dalam
+  administrasi jaringan, troubleshooting perangkat
+  keras dan lunak, serta konfigurasi jaringan
+  berbasis MikroTik dan Cisco. Terbiasa berpikir
+  analitis, berorientasi pada ketepatan dan solusi
+  teknis, serta memiliki kedisiplinan dan kesiapan
+  tinggi untuk berkontribusi secara profesional
+  dalam program <strong>Praktik Kerja Lapangan
+  (PKL) / Magang Industri</strong>.
+            </p>
+          </section>
+
+          <!-- RIWAYAT PENDIDIKAN -->
+          <section class="section-card">
+            <h2 class="sec-heading"><i class="fa-
+  solid fa-graduation-cap"></i> Riwayat
+  Pendidikan</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="item-top">
+                  <span class="item-title">SMK
+  Negeri 5 Bandung</span>
+                  <span class="item-period">Aktif
+  &bull; Sedang Berjalan</span>
+                </div>
+                <p class="item-sub">Kompetensi
+  Keahlian: Teknik Komputer dan Jaringan (TKJ)
+  &bull; Absen 31</p>
+                <div class="item-desc">
+                  <ul>
+                    <li>Mempelajari dasar dan
+  lanjutan arsitektur jaringan lokal (LAN) maupun
+  jaringan nirkabel (WLAN).</li>
+                    <li>Mendalami materi
+  Administrasi Infrastruktur Jaringan (AIJ),
+  Administrasi Sistem Jaringan (ASJ), dan
+  Teknologi Jaringan Berbasis Luas (WAN).</li>
+                    <li>Aktif berpartisipasi dalam
+  praktikum laboratorium kejuruan dengan menjaga
+  etika kerja, SOP, dan disiplin tinggi.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="item-top">
+                  <span class="item-title">Sekolah
+  Menengah Pertama (SMP)</span>
+                  <span class="item-
+  period">Lulus</span>
+                </div>
+                <p class="item-sub">Bandung, Jawa
+  Barat</p>
+                <div class="item-desc">
+                  Menyelesaikan pendidikan dasar
+  dengan fondasi yang kuat dalam bidang logika,
+  matematika, dan ilmu pengetahuan alam.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- PENGALAMAN PRAKTIKUM & PROYEK
+  KEJURUAN -->
+          <section class="section-card">
+            <h2 class="sec-heading"><i class="fa-
+  solid fa-laptop-code"></i> Pengalaman Praktikum
+  & Proyek Sekolah</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="item-top">
+                  <span class="item-
+  title">Simulasi & Konfigurasi Jaringan Berbasis
+  VLAN</span>
+                  <span class="item-period">Proyek
+  Praktikum</span>
+                </div>
+                <p class="item-sub">Laboratorium
+  Komputer & Jaringan SMKN 5 Bandung</p>
+                <div class="item-desc">
+                  <ul>
+                    <li>Merancang topologi
+  jaringan switch bertingkat dengan segmentasi
+  Virtual LAN (VLAN) menggunakan simulator Cisco
+  Packet Tracer.</li>
+                    <li>Mengonfigurasi DHCP Server,
+  Default Gateway, serta melakukan pengujian
+  inter-VLAN routing.</li>
+                    <li>Melakukan analisis log
+  pengujian (ping test & traceroute) guna
+  memastikan efisiensi transmisi data dan bebas
+  looping.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="item-top">
+                  <span class="item-
+  title">Konfigurasi Router MikroTik & Manajemen
+  Bandwidth</span>
+                  <span class="item-
+  period">Praktik Kejuruan</span>
+                </div>
+                <p class="item-sub">Praktik
+  Mandiri & Kelompok</p>
+                <div class="item-desc">
+                  <ul>
+                    <li>Melakukan setup awal
+  MikroTik RouterBOARD melalui Winbox (pengaturan
+  IP, DNS, NAT Masquerade, dan Firewall Filter).
+  </li>
+                    <li>Menerapkan pembagian
+  bandwidth (Simple Queue) untuk mengoptimalkan
+  kestabilan koneksi internet pengguna.</li>
+                    <li>Membuat sistem Hotspot
+  login dasar untuk autentikasi user jaringan
+  lokal.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="item-top">
+                  <span class="item-
+  title">Perakitan PC & Pemeliharaan Sistem
+  Komputer</span>
+                  <span class="item-
+  period">Praktik Bengkel</span>
+                </div>
+                <p class="item-sub">Perakitan &
+  Troubleshooting</p>
+                <div class="item-desc">
+                  <ul>
+                    <li>Melakukan perakitan
+  motherboard, processor, RAM, storage, dan power
+  supply sesuai standar K3.</li>
+                    <li>Instalasi sistem operasi
+  (Windows / Linux), partisi storage, dan
+  instalasi paket software esensial.</li>
+                    <li>Pemasangan konektor kabel
+  UTP (crimping kabel straight & cross) dan
+  pengujian menggunakan LAN Tester.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- FOKUS KESIAPAN KERJA -->
+          <section class="section-card">
+            <h2 class="sec-heading"><i class="fa-
+  solid fa-bullseye"></i> Target & Kesiapan
+  Kerja</h2>
+            <div class="highlight-grid">
+              <div class="highlight-card">
+                <h4><i class="fa-solid fa-
+  server"></i> IT Support & Helpdesk</h4>
+                <p>Mampu menangani pemeliharaan
+  hardware, instalasi software, instalasi ulang OS,
+  dan troubleshooting konektivitas kerja sehari-
+  hari.</p>
+              </div>
+              <div class="highlight-card">
+                <h4><i class="fa-solid fa-
+  wifi"></i> Junior Network Administrator</h4>
+                <p>Siap membantu instalasi
+  perkabelan jaringan, routing dasar, setup
+  switch/router, dan pemantauan kestabilan
+  jaringan LAN/WLAN kantor.</p>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+    </body>
+  </html>
